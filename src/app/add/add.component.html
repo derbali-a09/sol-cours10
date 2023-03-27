@@ -1,0 +1,21 @@
+<p class="display-4 text-center">Formulaire d'ajout</p>
+<form #ajout="ngForm" (ngSubmit)="ajouter()">
+    <div class="mb-3">
+        <label for="nom" class="form-label">Entrer le nom</label>
+        <input type="text" class="form-control" id="nom" name="nom" [(ngModel)]="nouvelEmploye.nom">
+    </div>
+    <div class="mb-3">
+        <label for="dateEmbauche" class="form-label">Date d'embauche</label>
+        <input type="datetime" class="form-control" id="dateEmbauche" name="dateEmbauche" [(ngModel)]="nouvelEmploye.dateEmbauche">
+    </div>
+    <div class="mb-3">
+        <label for="salaire" class="form-label">Salaire</label>
+        <input type="text" class="form-control" id="salaire"  name="salaire" [(ngModel)]="nouvelEmploye.salaire">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<div>
+    <p *ngIf="added == true" class="text-success">Nouvelle personne ajoutée</p>
+    <!-- <p *ngIf="added == false" class="text-danger">Attention personne non ajoutée</p> -->
+</div>

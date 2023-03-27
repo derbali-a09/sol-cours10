@@ -1,0 +1,7 @@
+<p class="display-1 text-center">Liste des employés</p>
+<table class="w-50 mx-auto table table-hover">
+    <tr *ngFor="let emp of employes">
+        <td>{{emp.nom}}</td>
+        <td><a class="btn btn-outline-warning" routerLink="/employes/{{emp.id}}">Voir détails</a></td>
+    </tr>
+</table>

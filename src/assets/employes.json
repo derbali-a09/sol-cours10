@@ -1,0 +1,22 @@
+{
+    "employes": [
+        {
+            "id": 1,
+            "nom": "Alex Lajoie",
+            "dateEmbauche": "2001-01-05",
+            "salaire": 36000
+        },
+        {
+            "id": 2,
+            "nom": "Annie Liam",
+            "dateEmbauche": "2002-03-15",
+            "salaire": 40000
+        },
+        {
+            "id": 3,
+            "nom": "Simon Lemay",
+            "dateEmbauche": "2002-12-10",
+            "salaire": 38000
+        }
+    ]
+}

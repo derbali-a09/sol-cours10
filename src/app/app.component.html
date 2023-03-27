@@ -1,0 +1,15 @@
+<div class="w-50 mx-auto">
+  <a class="btn btn-outline-secondary" routerLink="/">Accueil</a>
+  &nbsp;&nbsp;
+  <a class="btn btn-outline-success" routerLink="/employes">Voir employés</a>
+  &nbsp;&nbsp;
+  <a class="btn btn-outline-success" routerLink="/add">Ajouter</a>
+  <router-outlet></router-outlet>
+</div>
+
+<h1>Il y a {{names.length}} noms</h1>
+<ul>
+  <li *ngFor="let n of names">{{n}}</li>
+</ul>
+
+
